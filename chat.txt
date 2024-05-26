@@ -1,0 +1,9 @@
+Write a Chrome Extension.
+Add popup page html of the chrome extension.
+Add option page html of the chrome extension.
+
+The extension will intercept what sites are allowed and if it's not allowed, redirect it to ./not-allowed.html?h=HOST page in the extension.
+
+We're going to maintain a domain blacklist variable of domains. add 3 sample domains there.
+
+We have to use a "before navigate" callback and intercept before even downloading and reaching the page. check domain against the blacklist.
